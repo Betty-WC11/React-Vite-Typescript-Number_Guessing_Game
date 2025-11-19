@@ -28,7 +28,7 @@ bash
 
 git clone https://github.com/Betty-WC11/React-Vite-Typescript-Number_Guessing_Game.git
 
-cd stop-the-bomb
+cd React-Vite-Typescript-Number_Guessing_Game
 ```
 
 2. Install dependencies
@@ -51,7 +51,7 @@ npm run dev
 ## 🛠️ Built With
 
 - React
-- JavaScript
+- JavaScript / TypeScript
 - CSS
 - Vite
 
