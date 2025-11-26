@@ -3,8 +3,8 @@ import "./NumberTile.css";
 function NumberTile(props) {
   return (
     <>
-      <div className="tileNumber">
-        <h2>{props.num}</h2>
+      <div>
+        <button className="tileNumber" onClick={props.onClick}>{props.num}</button>
       </div>
     </>
   );
