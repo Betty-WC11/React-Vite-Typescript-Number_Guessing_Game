@@ -11,6 +11,14 @@ function App() {
   console.log(randomNumber);
 
   const [attempts, setAttempts] = useState(3);
+  // const [ gameWon, setGameWon ] = useState();
+  // const [ gameLost, setGameLost ] = useState();
+
+  const handleOnClick = (clickedNumber) => {
+    return clickedNumber === randomNumber
+      ? console.log("You Win!")
+      : setAttempts(attempts - 1);
+  };
 
   // for the 1-100 tiles
   const tiles = [];
@@ -24,7 +32,13 @@ function App() {
       <h3> Attempts remaining: {attempts} </h3>
       <div className="numberTiles">
         {tiles.map((number) => {
-          return <NumberTile num={number} key={number} />;
+          return (
+            <NumberTile
+              num={number}
+              key={number}
+              onClick={() => handleOnClick(number)}
+            />
+          );
         })}
       </div>
     </>
