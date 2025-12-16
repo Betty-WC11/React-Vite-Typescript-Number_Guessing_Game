@@ -3,6 +3,8 @@ import Header from "./components/Header.jsx";
 import NumberTile from "./components/NumberTile.jsx";
 import { useState } from "react";
 import WinPage from "./components/WinPage.jsx";
+import bomb from "./assets/bomb.webp";
+import LosePage from "./components/LosePage.jsx";
 
 function App() {
   const [gameStatus, setGameStatus] = useState("playing");
@@ -48,7 +50,7 @@ function App() {
     return (
       <>
         <Header />
-        <WinPage />
+        <WinPage answer={randomNumber} />
       </>
     );
   }
@@ -57,7 +59,7 @@ function App() {
     return (
       <>
         <Header />
-        <h1>You Lose</h1>
+        <LosePage answer={randomNumber} />
       </>
     );
   }
@@ -65,7 +67,8 @@ function App() {
   return (
     <>
       <Header />
-      <h3> Attempts remaining: {attempts} </h3>
+      <h3 className="attempts-text"> Attempts remaining: {attempts} </h3>
+      <img src={bomb} alt="bomb-picture" className="bomb-picture" />
       <div className="numberTiles">
         {allTiles.map((number) => {
           return (

@@ -1,4 +1,16 @@
+.header-container {
+  background-color: rgb(53, 53, 90);
+  /* margin: 0px 0px 50px 0; */
+  padding: 40px 0 40px 0;
+}
+
 .title {
-  font-size: large;
-  color: brown;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.header-text {
+  color: rgb(255, 252, 252);
+  font-size: 1.5rem;
 }
