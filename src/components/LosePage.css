@@ -1,7 +1,44 @@
-.boom-pic {
-  width: 500px;
+.you-lose {
+  font-size: 3rem;
 }
 
-p {
+.lose-answer-container {
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+}
+
+.lose-box {
+  background-color: #3f3f95e7;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.lose-text {
   font-size: 2rem;
+}
+
+.lose-answer {
+  font-size: 3rem;
+  margin: 0;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d5dae6;
+}
+
+.boom-pic {
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.boom {
+  width: 30rem;
 }
