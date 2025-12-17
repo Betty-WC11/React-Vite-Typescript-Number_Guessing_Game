@@ -1,7 +1,53 @@
-.bomb-man {
-  width: 200px;
+.you-win {
+  font-size: 3rem;
 }
 
-p {
-  font-size: 2rem;
+.win-answer-container {
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+}
+
+.win-box {
+  background-color: #3f3f95e7;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.win-answer {
+  font-size: 3rem;
+  margin: 0;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d5dae6;
+}
+
+.defuse-bomb-text {
+  font-size: 1.5rem;
+}
+
+.bomb-man {
+  width: 200px;
+  position: relative;
+  animation: wiggle 0.5s infinite;
+  transform-origin: center;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
 }
