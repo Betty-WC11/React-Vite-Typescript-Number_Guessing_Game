@@ -6,7 +6,6 @@ function WinPage(props) {
     <>
       <h1 className="you-win">YOU WIN!</h1>
       <div className="win-answer-container">
-        <div className="win-box"></div>
         <h2 className="win-answer">{props.answer}</h2>
       </div>
 
